@@ -1,7 +1,9 @@
 
 function Game(uuid) {
-    this.uuid = uuid;
-    return this;
+    this.uuid = uuid
+    this.playerA = null
+    this.playerB = null
+    return this
 }
 
 module.exports = Game
