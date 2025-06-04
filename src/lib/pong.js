@@ -218,7 +218,7 @@ var Game = {
             this.canvas.height
         );
 
-        // Set the fill style to black
+        // Set the fill style to the current background color
         this.context.fillStyle = this.color;
 
         // Draw the background
