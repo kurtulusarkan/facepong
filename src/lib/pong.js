@@ -20,7 +20,8 @@ var Ball = {
             y: (this.canvas.height / 2) - 9,
             moveX: DIRECTION.IDLE,
             moveY: DIRECTION.IDLE,
-            speed: 10
+            // allow the caller to increase the ball speed between rounds
+            speed: incrementedSpeed || 10
         };
     }
 };
