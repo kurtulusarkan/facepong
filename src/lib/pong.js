@@ -138,7 +138,7 @@ var Game = {
             if (Pong._turnDelayIsOver.call(this) && this.turn) {
                 this.ball.moveX = this.turn === this.player ? DIRECTION.LEFT : DIRECTION.RIGHT;
                 this.ball.moveY = [DIRECTION.UP, DIRECTION.DOWN][Math.round(Math.random())];
-                this.ball.y = Math.floor(Math.random() * this.canvas.height - 200) + 200;
+                this.ball.y = Math.floor(Math.random() * (this.canvas.height - 200)) + 200;
                 this.turn = null;
             }
 
